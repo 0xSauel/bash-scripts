@@ -1,3 +1,5 @@
+Just Copy/Paste into terminal to start recording. Output file going to save in current dir.
+
 ffmpeg -framerate 1 -f x11grab -s 1920,1080 -i :0.0+0,0 -vf 
 settb=\(1/30\),setpts=N/TB/30 -r 30 -vcodec libx264 -crf 0 -preset 
 ultrafast -threads 0 tl_out.mkv
